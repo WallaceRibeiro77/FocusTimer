@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --white:hsl(0, 0%, 100%);
+    --button-sound: hsl(240, 9%, 89%);
+    --button-sound-Tapped: hsl(194, 97%, 31%);
+    --black:hsl(0, 0%, 0%);
+
+    font-size: clamp(40%, 1% + 2vw, 62.5%);
+}
+
+html.light{
+    background-color: var(--black);
+    color: var(--white);
+}
+html.light .ph-sun,
+html:not(.light) .ph-moon{
+    display: none;
+}
+html:not(.light) #controls button{
+    color: var(--black);
+}
+
+#toggle-mode{
+    cursor: pointer;
+    position: absolute;
+    right: 3.2rem;
+    top: 3.2rem;
+    font-size: 3.2rem;
+    line-height: 0;
+    color: var(--black);
+}
+
+.sr-only{
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    overflow: hidden;
+
+    margin: -1px;
+    padding: 0px;
+    border: 0;
+    appearance: none;
+}
+
+#main{
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    gap: 7rem;
+}
+.sectionTimer{
+    text-align: center;
+}
+#display{
+    font-size: 16.6rem;
+    margin-bottom: 3rem;
+}
+#controls{
+    display: flex;
+    justify-content: space-around;
+}
+#controls button{
+    color: var(--white);
+    border-radius: 999rem;
+    background-color: transparent;
+    border: 0;
+
+    cursor: pointer;
+    font-size: 6.4rem;
+}
+.sectionSounds{
+    max-width:30.8rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.sectionSounds button{
+    width: 13.8rem;
+    height: 15.2rem;
+    font-size: 6.4rem;
+    border-radius: 2.4rem;
+    background-color: var(--button-sound);
+    cursor: pointer;
+}
+.sectionSounds button:hover{
+    background-color: var(--button-sound-Tapped);
+    color: var(--white);
+}
+/*controls*/
+.running .ph-play-circle,
+html:not(.running) .ph-stop-circle{
+    display: none;
+}

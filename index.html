@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script type="module" src="src/main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>FocusTimer v2.0</title>
+</head>
+<body>
+    <div id="main">
+        <button id="toggle-mode">
+            <span class="sr-only">Ativar Light mode!</span>
+            <i class="ph-bold ph-sun"></i>
+            <i class="ph-bold ph-moon"></i>
+        </button>
+        <div class="container">
+            <div class="sectionTimer">
+                <div id="display">
+                    <span class="minutes">25</span>
+                    <span>:</span>
+                    <span class="seconds">00</span>
+                </div>
+                <div id="controls">
+                    <button class="ph ph-play-circle">
+                        <span class="sr-only">Play</span>
+                    </button>
+                    <button class="ph ph-stop-circle">
+                        <span class="sr-only">Stop</span>
+                    </button>
+                    <button class="ph ph-plus-circle">
+                        <span class="sr-only">Add more five minutes</span>
+                    </button>
+                    <button class="ph ph-minus-circle">
+                        <span class="sr-only">Decrease five minutes</span>
+                    </button>
+                </div>
+            </div>
+            <div class="sectionSounds">
+                <button class="ph ph-tree">
+                    <span class="sr-only">Play sound of nature</span>
+                </button>
+                <button class="ph ph-cloud-rain">
+                    <span class="sr-only">Play sound of rain</span>
+                </button>
+                <button class="ph ph-storefront">
+                    <span class="sr-only">Play sound of coffee shop</span>
+                </button>
+                <button class="ph ph-fire">
+                    <span class="sr-only">Play sound of fire burn</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
