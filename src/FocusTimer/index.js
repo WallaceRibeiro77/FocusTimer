@@ -1,7 +1,10 @@
-import * as state from './state.js';
+import state from './state.js';
+import * as events from './events.js';
 
 
-function start(minutes, seconds){
+export function start(minutes, seconds){
     state.minutes = minutes
     state.seconds = seconds
+
+    events.registerControls()
 }

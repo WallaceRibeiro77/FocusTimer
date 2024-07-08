@@ -23,16 +23,24 @@
                     <span class="seconds">00</span>
                 </div>
                 <div id="controls">
-                    <button class="ph ph-play-circle">
+                    <button
+                    data-action="toggleRunning"
+                    class="ph ph-play-circle">
                         <span class="sr-only">Play</span>
                     </button>
-                    <button class="ph ph-stop-circle">
+                    <button 
+                    data-action="toggleRunning"
+                    class="ph ph-stop-circle">
                         <span class="sr-only">Stop</span>
                     </button>
-                    <button class="ph ph-plus-circle">
+                    <button
+                    data-action="addFive"
+                    class="ph ph-plus-circle">
                         <span class="sr-only">Add more five minutes</span>
                     </button>
-                    <button class="ph ph-minus-circle">
+                    <button 
+                    data-action="minusFive"
+                    class="ph ph-minus-circle">
                         <span class="sr-only">Decrease five minutes</span>
                     </button>
                 </div>
